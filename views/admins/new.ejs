@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Admin</title>
+</head>
+<body>
+    <h1>Fill up for Admin</h1>
+    <form action="/admins" method="post">
+        <div>
+            <label for="year">Year:</label>
+            <input type="number" id="year" name="admin[year]">
+        </div>
+        <div>
+            <label for="fees">Fees:</label>
+            <input type="number" id="fees" name="admin[fees]">
+        </div>
+        <div>
+            <label for="hubname">Hubname</label>
+            <input type="text" id="hubname" name="admin[hubname]">
+        </div>
+        <div>
+            <label for="spentonhub">Total Spent On Hub</label>
+            <input type="number" id="spentonhub" name="admin[totalSpentOnHub]">
+        </div>
+        <div>
+            <label for="avgcg">Average Cg</label>
+            <input type="number" id="avgcg" name="admin[avgcg]">
+        </div>
+        <div>
+            <label for="company">Company Name:</label>
+            <input type="text" id="company" name="admin[company]">
+        </div>
+        <div>
+            <label for="offer">Offers</label>
+            <input type="number" id="offer" name="admin[offer]">
+        </div>
+        <div>
+            <label for="placed">Placed:</label>
+            <input type="number" id="placed" name="admin[placed]">
+        </div>
+        <button>Submit</button>
+    </form>
+    <a href="/admins">All Datat</a>
+</body>
+</html>

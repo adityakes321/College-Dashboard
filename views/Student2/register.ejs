@@ -1,0 +1,105 @@
+<% layout('layouts/boilerplate') %>
+<h1>Student Register</h1>
+<form action="/students/register" method="post" class="validate-form" novalidate>
+    <div class="mb-3">
+        <label class="form-label" for="username">Username</label>
+        <input class="form-control" type="text" name="username" id="username" required>
+        <div class="valid-feedback">
+            Looks Good!
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label" for="password">Password</label>
+        <input class="form-control" type="password" name="password" id="password" required>
+        <div class="valid-feedback">
+            Looks Good!
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label" for="id">Id:</label>
+        <input class="form-control" type="number" id="id" name="id">
+        <div class="valid-feedback">
+            Looks Good!
+        </div>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="name">Name:</label>
+        <input class="form-control" type="text" id="name" name="name">
+        <div class="valid-feedback">
+            Looks Good!
+        </div>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="state">State:</label>
+        <input class="form-control" type="text" id="state" name="state">
+        <div class="valid-feedback">
+            Looks Good!
+        </div>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="city">City:</label>
+        <input class="form-control" type="text" id="city" name="city">
+        <div class="valid-feedback">
+            Looks Good!
+        </div>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="jyear">Joinyear:</label>
+        <input class="form-control" type="number" id="jyear" name="joinyear">
+        <div class="valid-feedback">
+            Looks Good!
+        </div>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="eyear">End year:</label>
+        <input class="form-control" type="number" id="eyear" name="endyear">
+        <div class="valid-feedback">
+            Looks Good!
+        </div>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="cg">Cg:</label>
+        <input class="form-control" type="number" id="cg" name="cg">
+        <div class="valid-feedback">
+            Looks Good!
+        </div>
+    </div>
+    <div class="row g-3 mb-3">
+        <div class="col-md-3">
+            <label class="form-label" for="gender">Gender:</label>
+            <!-- <input type="text" id="gender" name="student[name]"> -->
+            <select class="form-select" name="gender" id="gender">
+                <% for(let g of gender){ %>
+                    <option value="<%= g %>"><%= g %> </option>
+                    <% } %>  
+            </select>
+        </div>
+        
+        <div class="col-md-3">
+            <label class="form-label" for="course">Course:</label>
+            <!-- <input type="text" id="gender" name="student[name]"> -->
+            <select class="form-select" name="course" id="course">
+                <% for(let c of course){ %>
+                    <option value="<%=c%>"><%=c%> </option>
+                    <% } %>  
+            </select>
+        </div>
+
+        <div class="col-md-3">
+            <label class="form-label" for="branch">Branch:</label>
+            <!-- <input type="text" id="gender" name="student[name]"> -->
+            <select class="form-select" name="branch" id="branch">
+                <% for(let b of branch){ %>
+                    <option value="<%=b%>"><%= b %> </option>
+                    <% } %>  
+            </select>
+        </div>
+    </div>
+
+
+    <button class="btn btn-success">Register</button>
+
+
+</form> 

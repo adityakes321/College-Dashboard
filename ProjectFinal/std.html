@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="style111.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <div class="btn">
+      <span class="fas fa-bars"></span>
+    </div>
+    <nav class="sidebar">
+      <div class="text">Student Dashboard</div>
+      <ul>
+        <li class="active"><a href="#">Dashboard</a></li>
+        <li>
+          <a href="#" class="feat-btn">Personal Info
+          
+        </li>
+        <li>
+          <a href="#" class="serv-btn">Fee Details
+            
+        </li>
+        <li><a href="#">Attendance</a></li>
+        <li><a href="#">Exam Marks</a></li>
+        <li><a href="#">Results</a></li>
+        <li><a href="#">Placements</a></li>
+      </ul>
+    </nav>
+    <div class="image">
+      <img src="priscilla-du-preez-ggeZ9oyI-PE-unsplash.jpg" style="width: 100vw; height: 100vh; z-index: -1;" alt="">
+      <div style="position: absolute; top: 50%; left: 50%;
+      transform: translate(-50%, -50%); font-size: xx-large; font-weight: bolder;">
+        Student Dashboard
+        
+      </div>
+    </div>
+    
+
+    <script>
+    $('.btn').click(function(){
+      $(this).toggleClass("click");
+      $('.sidebar').toggleClass("show");
+    });
+      $('.feat-btn').click(function(){
+        $('nav ul .feat-show').toggleClass("show");
+        $('nav ul .first').toggleClass("rotate");
+      });
+      $('.serv-btn').click(function(){
+        $('nav ul .serv-show').toggleClass("show1");
+        $('nav ul .second').toggleClass("rotate");
+      });
+      $('nav ul li').click(function(){
+        $(this).addClass("active").siblings().removeClass("active");
+      });
+    </script>
+
+  </body>
+</html>

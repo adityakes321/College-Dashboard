@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clocking Details</title>
+</head>
+<body>
+    <h1>Clocking Details</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Clock In Time</th>
+                <th>Clock out time</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% if(clockings){ %>
+                <tr><%= clockings.student%>  </tr>
+                <tr><%=clockings.clockIn%></tr>
+                <tr><%=clockings.clockOut%> </tr>
+             <% }else{ %>
+                <p>No Students to display</p>
+                <% } %>      
+        </tbody>
+    </table>
+    
+</body>
+</html>

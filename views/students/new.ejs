@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+
+   
+
+
+
+    <div class="container-fluid">
+        <div class="row flex-nowrap">
+            <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
+                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                    <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                        <span class="fs-5 d-none d-sm-inline">Admin Dashboard</span>
+                    </a>
+                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                        
+                        <li class="nav-item">
+                            <a href="https://charts.mongodb.com/charts-minor-project-ulzsr/public/dashboards/eb52d7ac-7ad5-4017-b6b3-b32f99b5a1a9" class="nav-link align-middle px-0">
+                                <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/teachers" class="nav-link px-0 align-middle">
+                                <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline">Teachers List</span></a>
+                        </li>
+                        <li>
+                            <a href="/teachers/new" class="nav-link px-0 align-middle">
+                                <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline">Add a new Teachers</span></a>
+                        </li>
+                        
+                    </ul>
+                    <hr>
+                    <div class="dropdown pb-4">
+                        <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="data:image/jpeg;base64,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" alt="hugenerd" width="30" height="30" class="rounded-circle">
+                            <span class="d-none d-sm-inline mx-1">Admin</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+                            
+                            <li><a class="dropdown-item" href="#">Settings</a></li>
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="/logout">Sign out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col py-3">
+                
+                <h1 class="text-center">New Student</h1>
+    
+                <div class="row">
+                    <div class="col-6 offset-3">
+                        <form action="/teachers/<%=teacher._id%>/students" method="post" novalidate class="validated-form">
+                            <div class="mb-3">
+                                <label class="form-label" for="id">Id:</label>
+                                <input class="form-control" type="number" id="id" name="student[id]">
+                                <div class="valid-feedback">
+                                    Looks Good!
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label" for="name">Name:</label>
+                                <input class="form-control" type="text" id="name" name="student[name]">
+                                <div class="valid-feedback">
+                                    Looks Good!
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label" for="state">State:</label>
+                                <input class="form-control" type="text" id="state" name="student[state]">
+                                <div class="valid-feedback">
+                                    Looks Good!
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label" for="city">City:</label>
+                                <input class="form-control" type="text" id="city" name="student[city]">
+                                <div class="valid-feedback">
+                                    Looks Good!
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label" for="jyear">Joinyear:</label>
+                                <input class="form-control" type="number" id="jyear" name="student[joinyear]">
+                                <div class="valid-feedback">
+                                    Looks Good!
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label" for="eyear">End year:</label>
+                                <input class="form-control" type="number" id="eyear" name="student[endyear]">
+                                <div class="valid-feedback">
+                                    Looks Good!
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label" for="cg">Cg:</label>
+                                <input class="form-control" type="number" id="cg" name="student[cg]">
+                                <div class="valid-feedback">
+                                    Looks Good!
+                                </div>
+                            </div>
+                            <div class="row g-3 mb-3">
+                                <div class="col-md-3">
+                                    <label class="form-label" for="gender">Gender:</label>
+                                    <!-- <input type="text" id="gender" name="student[name]"> -->
+                                    <select class="form-select" name="student[gender]" id="gender">
+                                        <% for(let g of gender){ %>
+                                            <option value="<%= g %>"><%= g %> </option>
+                                            <% } %>  
+                                    </select>
+                                </div>
+                                
+                                <div class="col-md-3">
+                                    <label class="form-label" for="course">Course:</label>
+                                    <!-- <input type="text" id="gender" name="student[name]"> -->
+                                    <select class="form-select" name="student[course]" id="course">
+                                        <% for(let c of course){ %>
+                                            <option value="<%=c%>"><%=c%> </option>
+                                            <% } %>  
+                                    </select>
+                                </div>
+                        
+                                <div class="col-md-3">
+                                    <label class="form-label" for="branch">Branch:</label>
+                                    <!-- <input type="text" id="gender" name="student[name]"> -->
+                                    <select class="form-select" name="student[branch]" id="branch">
+                                        <% for(let b of branch){ %>
+                                            <option value="<%=b%>"><%= b %> </option>
+                                            <% } %>  
+                                    </select>
+                                </div>
+                            </div>
+                    
+                    
+                            <button class="btn btn-success">Submit</button>
+                        </form>
+                        <a href="/students">All Students</a>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
